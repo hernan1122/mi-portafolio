@@ -13,12 +13,19 @@ html {
 body {
   font-family: "Oswald", sans-serif;
 }
+.inactive {
+  display: none;
+}
 .cabecera {
   background-image: url("../img/Rectangle\ 2.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   height: 90vh;
+}
+.cabecera .fa-solid {
+  font-size: 25px;
+  color: var(--white-letters);
 }
 .cabecera .menu {
   height: 10%;
@@ -29,6 +36,18 @@ body {
 }
 .cabecera .menu:hover {
   background-color: #f0f6f857;
+}
+.cabecera .menu .menu-icon {
+  background-color: transparent;
+  border: none;
+  display: none;
+  margin: 20px;
+}
+.cabecera .menu .menu-icon .fa-bars-staggered {
+  font-size: 30px;
+}
+.cabecera .menu .notebook-menu {
+  display: block;
 }
 .cabecera .menu a {
   color: var(--white-letters);
@@ -46,6 +65,33 @@ body {
 }
 .cabecera .menu .cv {
   margin-right: 60px;
+}
+/*mobile menu*/
+.cabecera .menu .mobile-menu {
+  padding: 0px 15px 0px 15px;
+  position: absolute;
+  top: 50px;
+  right: 20px;
+  width: auto;
+  height: auto;
+  text-align: center;
+}
+.cabecera .menu .mobile-menu ul {
+  list-style: none;
+}
+.cabecera .menu .mobile-menu li {
+  border-bottom: 1px solid #fff;
+  transition: 1s;
+}
+.cabecera .menu .mobile-menu li:hover {
+  background-color: #989899b4;
+}
+.cabecera .menu .mobile-menu a {
+  font-size: 1.5rem;
+  font-weight: 200;
+  line-height: 30px;
+  width: 100%;
+  text-decoration: none;
 }
 /*header*/
 .info-header {
@@ -301,7 +347,7 @@ footer .title-contacts h2 {
   color: #989899;
 }
 
-@media(max-width: 768px) {
+@media(max-width: 1000px) {
   .cabecera .menu a {
     margin: 0 8px;
     font-size: 1.2rem;
@@ -332,6 +378,128 @@ footer .title-contacts h2 {
   }
   .networks .container-networks .social-networks a {
     font-size: 40px;
+  }
+}
+
+@media(max-width: 768px) {
+  .cabecera {
+    width: 100%;
+    height: 80vh;
+  }
+  .cabecera .menu:hover {
+    background-color: transparent;
+  }
+  .cabecera .menu a:hover {
+  border: none;
+  padding: 0;
+}
+  .cabecera .menu .menu-icon {
+    display: block;
+  }
+  .cabecera .menu .notebook-menu {
+    display: none;
+  }
+  .info-header .info-container {
+    width: 300px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    box-shadow: none;
+  }
+  .info-header .info-container .container-img img {
+    width: 200px;
+  }
+  .info-header .info-container .container-nombre {
+    margin-left: 0;
+    border: none;
+  }
+  .info-header .info-container .container-nombre h3 {
+    font-size: 1.7rem;
+  }
+  main .container-about {
+    padding: 0;
+    padding-top: 10px;
+    height: auto;
+  }
+  main .container-about figure {
+    display: none;
+    padding-right: 0;
+    border-right: none;
+  }
+  main .container-about figure img {
+    width: 0;
+  }
+  main .container-about .about {
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  main .container-about .about h2 {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #323335;
+  }
+  main .container-about .about p {
+   padding: 20px 30px 30px 30px;
+  }
+  .container-jobs .my-jobs {
+    grid-template-columns: repeat(auto-fill, 160px);
+  }
+  .container-jobs .my-jobs .jobs {
+    width: 160px;
+  }
+  .container-jobs .my-jobs .jobs img {
+    width: 160px;
+    height: 160px;
+  }
+  footer {
+  height: auto;
+  }
+  footer .footer-container {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+  }
+  .form .container-form {
+   margin: 0;
+   padding: 0;
+   width: 100%;
+   height: 300px;
+   border: none;
+  }
+  .form .container-form p {
+   margin: 8px 0;
+  }
+  .form .container-form input {
+   width: 260px;
+  }
+  .networks .container-networks {
+   margin: 0;
+   padding: 0;
+   padding-bottom: 0;
+   width: 100%;
+   height: 13vh;
+   border: none;
+  }
+  .networks .container-networks .social-networks {
+   width: 60%;
+   border-top: 1px solid #323335;
+  }
+  .networks .container-networks .social-networks a {
+   font-size: 35px;
+  }
+  .networks h3 {
+   font-size: 0;
+   padding-bottom: 0;
+   display: none;
+   border-bottom: none;
   }
 }
 

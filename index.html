@@ -17,24 +17,35 @@
 </head>
 <body>
   <header class="cabecera">
-      <nav class="menu">
+    <nav class="menu">
+      <button class="menu-icon" ><i class="fa-solid fa-bars-staggered"></i></button>
+      <div class="notebook-menu">
         <a href="#about">About</a>
         <a href="#jobs">Jobs</a>
         <a href="#contacts">Contacts</a>
         <a class="cv" href="">Curriculum Vitae</a>
-      </nav>
-      <div class="info-header">
-        <div class="info-container">
-          <figure class="container-img">
-            <img src="./img/fotoperfil.jpg" alt="" />
-          </figure>
-          <div class="container-nombre">
-            <h1>Torrico Axel</h1>
-            <h3>Web Developer</h3>
-          </div>
+      </div>
+      <div class="mobile-menu inactive">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#jobs">Jobs</a></li>
+          <li><a href="#contacts">Contacts</a></li>
+          <li><a href="">Curriculum Vitae</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="info-header">
+      <div class="info-container">
+        <figure class="container-img">
+          <img src="./img/fotoperfil.jpg" alt="" />
+        </figure>
+        <div class="container-nombre">
+          <h1>Torrico Axel</h1>
+          <h3>Web Developer</h3>
         </div>
       </div>
-    </header>
+    </div>
+  </header>
   <main>
     <section id="about" class="container-about">
       <figure>
@@ -191,5 +202,7 @@
       </section>
     </section>
   </footer>
+
+  <script src="./js/main.js"></script>
 </body>
 </html>
