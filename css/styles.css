@@ -70,7 +70,7 @@ body {
 .cabecera .menu .mobile-menu {
   padding: 0px 15px 0px 15px;
   position: absolute;
-  top: 50px;
+  top: 45px;
   right: 20px;
   width: auto;
   height: auto;
@@ -307,6 +307,19 @@ footer .title-contacts h2 {
   height: 30px;
   border: 1px solid #323335;
 }
+.form .container-form button {
+  margin-top: 16px;
+  padding: 8px 30px;
+  background-color: #989899;
+  font-family: "Oswald", sans-serif;
+  font-weight: 500;
+  border: none;
+  font-size: 1.5rem;
+  color: #323335;
+}
+.form .container-form button:hover {
+  background-color: #747475;
+}
 .networks .title-networks {
   display: flex;
   justify-content: center;
@@ -480,6 +493,10 @@ footer .title-contacts h2 {
   }
   .form .container-form input {
    width: 260px;
+  }
+  .form .container-form button {
+  margin: 16px 0;
+  padding: 5px 20px;
   }
   .networks .container-networks {
    margin: 0;
