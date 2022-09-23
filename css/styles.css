@@ -80,7 +80,7 @@ body {
   list-style: none;
 }
 .cabecera .menu .mobile-menu li {
-  margin: 5px 0;
+  padding: 5px 0;
   border-bottom: 1px solid #fff;
   transition: 1s;
 }
