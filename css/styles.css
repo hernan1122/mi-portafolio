@@ -333,7 +333,7 @@ footer .title-contacts h2 {
 .form .container-form button {
   margin-top: 16px;
   padding: 8px 30px;
-  background-color: #989899;
+  background-color: #e9e6e4;
   font-family: "Oswald", sans-serif;
   font-weight: 500;
   border: none;
@@ -341,7 +341,7 @@ footer .title-contacts h2 {
   color: #323335;
 }
 .form .container-form button:hover {
-  background-color: #747475;
+  background-color: #bdbbba;
 }
 .networks .title-networks {
   display: flex;
