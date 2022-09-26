@@ -38,33 +38,33 @@ body {
   background-color: #f0f6f857;
 }
 .bars__menu{
-    width: 7px;
-    height: auto;
+    width: 30px;
+    height: 30px;
     position: absolute;
     top: 4%;
     left: 89%;
-    transform: translate(-50%, -50%) scale(6);
+    transform: translate(-50%, -50%);
     cursor: pointer;
 }
 .bars__menu span {
-    margin-top: 1px;
+    margin-top: 6px;
     width: 100%;
-    height: 1px;
+    height: 2px;
     background: #fff;
     display: block;
     border-radius: 10px;
     transform-origin: 0px 100%;
-    transition: all 300ms;
+    transition: all 400ms;
 }
 .activeline1__bars-menu{
-    transform: rotate(45deg) translate(-1.8px, 0.5px); 
+    transform: rotate(45deg) translate(-2px, 1px); 
 }
 .activeline2__bars-menu{
     opacity: 0;
-    margin-left: -7px; 
+    margin-left: -30px; 
 }
 .activeline3__bars-menu{
-    transform: rotate(-45deg) translate(-0.9px, -0.9px);
+    transform: rotate(-45deg) translate(-4px, 2px);
 }
 .cabecera .menu .notebook-menu {
   display: block;
