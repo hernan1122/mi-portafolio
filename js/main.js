@@ -2,9 +2,10 @@ const mobileMenu = document.querySelector('.mobile-menu');
 const about = document.querySelector('#about');
 const jobs = document.querySelector('#jobs');
 const contacts = document.querySelector('#contacts');
-const barsMenu = document.querySelector(".bars__menu").addEventListener("click", animateBars);
+const barsMenu = document.querySelector(".bars__menu")
 
 mobileMenu.addEventListener('click', animateBars);
+barsMenu.addEventListener("click", animateBars);
 
 let line1__bars = document.querySelector(".line1__bars-menu");
 let line2__bars = document.querySelector(".line2__bars-menu");

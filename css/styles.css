@@ -41,7 +41,7 @@ body {
     width: 30px;
     height: 30px;
     position: absolute;
-    top: 4%;
+    top: 5%;
     left: 89%;
     transform: translate(-50%, -50%);
     cursor: pointer;
@@ -52,7 +52,7 @@ body {
     height: 2px;
     background: #fff;
     display: block;
-    border-radius: 10px;
+    border-radius: 20px;
     transform-origin: 0px 100%;
     transition: all 400ms;
 }
