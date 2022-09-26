@@ -37,14 +37,34 @@ body {
 .cabecera .menu:hover {
   background-color: #f0f6f857;
 }
-.cabecera .menu .menu-icon {
-  background-color: transparent;
-  border: none;
-  display: none;
-  margin: 20px;
+.bars__menu{
+    width: 7px;
+    height: auto;
+    position: absolute;
+    top: 4%;
+    left: 89%;
+    transform: translate(-50%, -50%) scale(6);
+    cursor: pointer;
 }
-.cabecera .menu .menu-icon .fa-bars-staggered {
-  font-size: 30px;
+.bars__menu span {
+    margin-top: 1px;
+    width: 100%;
+    height: 1px;
+    background: #fff;
+    display: block;
+    border-radius: 10px;
+    transform-origin: 0px 100%;
+    transition: all 300ms;
+}
+.activeline1__bars-menu{
+    transform: rotate(45deg) translate(-1.8px, 0.5px); 
+}
+.activeline2__bars-menu{
+    opacity: 0;
+    margin-left: -7px; 
+}
+.activeline3__bars-menu{
+    transform: rotate(-45deg) translate(-0.9px, -0.9px);
 }
 .cabecera .menu .notebook-menu {
   display: block;
@@ -57,7 +77,7 @@ body {
   font-size: 1.3rem;
   border-left: 1px transparent var(--white-letters);
   border-bottom: 1px transparent var(--white-letters);
-  transition: 0.3s;
+  transition: 3s;
 }
 .cabecera .menu a:hover {
   border-left: 1px solid var(--white-letters);
@@ -80,7 +100,8 @@ body {
   list-style: none;
 }
 .cabecera .menu .mobile-menu li {
-  padding: 5px 0;
+  padding: 6px 0;
+  width: 140px;
   border-bottom: 1px solid #fff;
   transition: 1s;
 }
@@ -88,7 +109,7 @@ body {
   background-color: #989899b4;
 }
 .cabecera .menu .mobile-menu a {
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   font-weight: 200;
   line-height: 30px;
   width: 100%;
@@ -146,7 +167,7 @@ main {
 main .container-about {
   padding: 30px;
   width: 100%;
-  height: 60vh;
+  height: auto;
   display: flex;
 }
 main .container-about figure {
@@ -221,7 +242,6 @@ main .container-jobs div h2 {
   margin: 10px 25px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 .container-jobs .my-jobs .jobs .description h3 {
   font-size: 1.6rem;
@@ -250,7 +270,7 @@ main .container-jobs div h2 {
 /*footer*/
 footer {
   width: 100%;
-  height: 70vh;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -278,7 +298,7 @@ footer .title-contacts h2 {
   margin: 20px 0 20px 20px;
   padding: 20px;
   padding-bottom: 30px;
-  width: 500px;
+  width: auto;
   height: 305px;
   border: 1px solid #323335;
   border-radius: 40px 0 0 40px;
@@ -299,12 +319,12 @@ footer .title-contacts h2 {
 .form .container-form p {
   font-size: 1.4rem;
   color: var(--gray-letters);
-  margin: 10px 0;
+  margin: 7px 0;
 }
 .form .container-form input {
   background-color: transparent;
-  width: 400px;
-  height: 30px;
+  padding: 4px;
+  width: 355px;
   border: 1px solid #323335;
 }
 .form .container-form button {
@@ -335,9 +355,9 @@ footer .title-contacts h2 {
 }
 .networks .container-networks {
   margin: 20px 20px 20px 0;
-  padding: 20px;
+  padding: 10px 20px;
   padding-bottom: 30px;
-  width: 500px;
+  width: auto;
   height: 305px;
   border: 1px solid #323335;
   border-left: none;
