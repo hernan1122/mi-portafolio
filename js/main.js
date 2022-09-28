@@ -5,10 +5,11 @@ const contacts = document.querySelector('#contacts');
 const barsMenu = document.querySelector('.bars__menu');
 const buttonUp = document.querySelector('#button-up');
 const cardJobs = document.querySelector('.jobs');
+const imgCard = document.querySelector('#imgCard');
 
 mobileMenu.addEventListener('click', animateBars);
 barsMenu.addEventListener('click', animateBars);
-cardJobs.addEventListener('click', toggleCardJobs);
+imgCard.addEventListener('click', toggleCardJobs);
 buttonUp.addEventListener('click', scrollUp);
 
 let line1__bars = document.querySelector(".line1__bars-menu");
@@ -29,7 +30,8 @@ function toggleMobileMenu() {
 }
 
 function toggleCardJobs() {
-  cardJobs.classList.remove(':hover');
+  imgCard.classList.toggle('jobs');
+  console.log('hola');
 }
 
 function scrollUp() {
