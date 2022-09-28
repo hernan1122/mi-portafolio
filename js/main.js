@@ -4,9 +4,11 @@ const jobs = document.querySelector('#jobs');
 const contacts = document.querySelector('#contacts');
 const barsMenu = document.querySelector('.bars__menu');
 const buttonUp = document.querySelector('#button-up');
+const cardJobs = document.querySelector('.jobs');
 
 mobileMenu.addEventListener('click', animateBars);
 barsMenu.addEventListener('click', animateBars);
+cardJobs.addEventListener('click', toggleCardJobs);
 buttonUp.addEventListener('click', scrollUp);
 
 let line1__bars = document.querySelector(".line1__bars-menu");
@@ -24,6 +26,10 @@ function animateBars() {
 
 function toggleMobileMenu() {
   mobileMenu.classList.toggle('inactive');
+}
+
+function toggleCardJobs() {
+  cardJobs.classList.remove(':hover');
 }
 
 function scrollUp() {
