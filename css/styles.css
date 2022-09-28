@@ -88,7 +88,9 @@ body {
   margin-right: 60px;
 }
 /*mobile menu*/
-.cabecera .menu .mobile-menu {
+.cabecera .menu #mobile-menu {
+  background-color: #bdbbba5b;
+  margin-top: 20px;
   padding: 0px 15px 0px 15px;
   position: absolute;
   top: 45px;
@@ -96,20 +98,25 @@ body {
   width: auto;
   height: auto;
   text-align: center;
+  border: 1px solid #fff;
+  z-index: 999;
 }
-.cabecera .menu .mobile-menu ul {
+.cabecera .menu #mobile-menu ul {
   list-style: none;
 }
-.cabecera .menu .mobile-menu li {
+.cabecera .menu #mobile-menu li {
   padding: 6px 0;
   width: 140px;
   border-bottom: 1px solid #fff;
   transition: 1s;
 }
-.cabecera .menu .mobile-menu li:hover {
+.cabecera .menu #mobile-menu li:hover {
   background-color: #989899b4;
 }
-.cabecera .menu .mobile-menu a {
+.cabecera .menu #mobile-menu .cv-mobile {
+  border: none;
+}
+.cabecera .menu #mobile-menu a {
   font-size: 1.7rem;
   font-weight: 200;
   line-height: 30px;
@@ -463,9 +470,6 @@ footer .title-contacts h2 {
   .cabecera .menu a:hover {
   border: none;
   padding: 0;
-  }
-  .cabecera .menu .menu-icon {
-    display: block;
   }
   .cabecera .menu .notebook-menu {
     display: none;

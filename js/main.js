@@ -1,4 +1,4 @@
-const mobileMenu = document.querySelector('.mobile-menu');
+const mobileMenu = document.querySelector('#mobile-menu');
 const about = document.querySelector('#about');
 const jobs = document.querySelector('#jobs');
 const contacts = document.querySelector('#contacts');
