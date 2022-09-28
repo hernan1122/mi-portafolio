@@ -520,6 +520,12 @@ footer .title-contacts h2 {
     width: 160px;
     height: 160px;
   }
+  main #button-up {
+    width: 40px;
+    height: 40px;
+    right: 25px;
+    bottom: 40px;
+  }
   footer {
   height: auto;
   }
@@ -639,6 +645,8 @@ footer .title-contacts h2 {
   main #button-up {
     width: 40px;
     height: 40px;
+    right: 20px;
+    bottom: 55px;
   }
   footer {
   height: auto;
