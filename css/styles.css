@@ -109,8 +109,8 @@ body {
   height: auto;
   text-align: center;
   z-index: 999;
-  animation: slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-  animation: slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation: slide-in-right 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation: slide-in-right 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 @keyframes slide-in-right {
   0% {
@@ -476,7 +476,7 @@ footer .title-contacts h2 {
 .networks .container-networks .social-networks a {
   font-size: 50px;
   color: var(--gray-letters);
-  margin: 0 20px;
+  margin: 0 15px;
 }
 .networks .container-networks .social-networks a:hover {
   color: #989899;
