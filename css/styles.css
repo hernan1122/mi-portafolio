@@ -364,7 +364,6 @@ main #button-up {
 }
 /*footer*/
 footer {
-  /* background-color: #f7f7f7; */
   background-image: url('../img/background-footer.svg');
   background-size: cover;
   width: 100%;
@@ -373,6 +372,12 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+footer .icon-write {
+  position: absolute;
+  left: 100px;
+  width: 300px;
+  border-radius: 100%;
 }
 footer .footer-container {
   display: flex;
@@ -481,6 +486,10 @@ footer .title-contacts h2 {
   }
   .container-jobs .my-jobs .jobs img {
     width: 220px;
+  }
+  footer .icon-write {
+    width: 220px;
+    left: 5px;
   }
   .form .container-form {
     width: 340px;
@@ -595,6 +604,10 @@ footer .title-contacts h2 {
   footer {
   height: auto;
   }
+  footer .icon-write {
+    width: 230px;
+    left: 5px;
+  }
   footer .footer-container {
    display: flex;
    flex-direction: column;
@@ -635,6 +648,14 @@ footer .title-contacts h2 {
    padding-bottom: 0;
    display: none;
    border-bottom: none;
+  }
+}
+
+@media(max-width: 600px) {
+  footer .icon-write {
+    width: 120px;
+    top: 2405px;
+    left: -13px;
   }
 }
 
@@ -711,6 +732,11 @@ footer .title-contacts h2 {
   }
   footer {
   height: auto;
+  }
+  footer .icon-write {
+    width: 100px;
+    left: -5px;
+    top: 2410px;
   }
   footer .footer-container {
    display: flex;
