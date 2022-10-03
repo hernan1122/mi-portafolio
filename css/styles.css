@@ -373,12 +373,6 @@ footer {
   justify-content: center;
   align-items: center;
 }
-footer .icon-write {
-  position: absolute;
-  left: 100px;
-  width: 300px;
-  border-radius: 100%;
-}
 footer .footer-container {
   display: flex;
   flex-direction: column;
@@ -487,10 +481,6 @@ footer .title-contacts h2 {
   .container-jobs .my-jobs .jobs img {
     width: 220px;
   }
-  footer .icon-write {
-    width: 220px;
-    left: 5px;
-  }
   .form .container-form {
     width: 340px;
   }
@@ -556,7 +546,8 @@ footer .title-contacts h2 {
     border-right: none;
   }
   main .container-about figure img {
-    width: 0;
+  width: 320px;
+  border-radius: 100%;
   }
   main .container-about .about {
     padding-left: 0;
@@ -604,10 +595,6 @@ footer .title-contacts h2 {
   footer {
   height: auto;
   }
-  footer .icon-write {
-    width: 230px;
-    left: 5px;
-  }
   footer .footer-container {
    display: flex;
    flex-direction: column;
@@ -650,14 +637,6 @@ footer .title-contacts h2 {
    border-bottom: none;
   }
 }
-
-@media(max-width: 600px) {
-  footer .icon-write {
-    width: 120px;
-    left: -13px;
-  }
-}
-
 @media(max-width: 370px) {
   .cabecera {
     width: 100%;
@@ -731,10 +710,6 @@ footer .title-contacts h2 {
   }
   footer {
   height: auto;
-  }
-  footer .icon-write {
-    width: 100px;
-    left: -5px;
   }
   footer .footer-container {
    display: flex;
