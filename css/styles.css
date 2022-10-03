@@ -444,6 +444,7 @@ footer .title-contacts h2 {
   align-items: center;
 }
 .networks .container-networks .social-networks {
+  padding: 10px;
   width: 60%;
   height: 100%;
   display: flex;
@@ -455,7 +456,6 @@ footer .title-contacts h2 {
   font-size: 40px;
   color: var(--gray-letters);
   margin: 0 20px;
-  padding: 10px 0 20px 0;
 }
 .networks .container-networks .social-networks a:hover {
   color: #9e9d9d;
