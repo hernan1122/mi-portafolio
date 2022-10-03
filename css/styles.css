@@ -196,8 +196,8 @@ main {
   align-items: center;
 }
 main .container-about {
-  /* background-color: #fff; */
-  background-color: rgba(255, 255, 255, 0.473);
+  background-color: #f7f7f7;
+  /* background-color: rgba(255, 255, 255, 0.473); */
   padding: 30px;
   width: 100%;
   height: auto;
@@ -370,8 +370,8 @@ main #button-up {
 }
 /*footer*/
 footer {
-  /* background-color: #fff; */
-  background-color: rgba(255, 255, 255, 0.473);
+  background-color: #f7f7f7;
+  /* background-color: rgba(255, 255, 255, 0.473); */
   width: 100%;
   height: auto;
   display: flex;
@@ -433,7 +433,7 @@ footer .title-contacts h2 {
 .form .container-form button {
   margin-top: 16px;
   padding: 8px 30px;
-  background-color: #e9e6e4;
+  background-color: #bdbbba;
   font-family: "Oswald", sans-serif;
   font-weight: 500;
   border: none;
@@ -441,7 +441,7 @@ footer .title-contacts h2 {
   color: #323335;
 }
 .form .container-form button:hover {
-  background-color: #bdbbba;
+  background-color: #9e9d9d;
 }
 .networks .title-networks {
   display: flex;
