@@ -91,6 +91,13 @@ body {
 .cabecera .menu .cv {
   margin-right: 60px;
 }
+
+.nav_mod{
+    height: 70px;
+    box-shadow: 1px 1px 10px 0px #00000010;
+    background: #fff;
+}
+
 /*mobile menu*/
 .cabecera .menu #mobile-menu {
   background-color: #f7f7f7;
@@ -175,12 +182,18 @@ body {
   border-left: 1px solid #f7f7f7;
 }
 .info-header .info-container .container-nombre h1 {
-  color: #f7f7f7;
   font-size: 4rem;
+  background: linear-gradient(to right, #f7f7f7, #7c7b7b);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .info-header .info-container .container-nombre h3 {
-  color: #f7f7f7;
   font-size: 2rem;
+  background: linear-gradient(to right, #f7f7f7, #7c7b7b);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 /*main*/
 main {
@@ -328,7 +341,7 @@ main .container-jobs div h2 {
   transition: 1s;
 }
 .container-jobs .my-jobs .jobs .description .icon:hover {
-  background-color: #989899;
+  background-color: #dddddd;
   border-radius: 100%;
 }
 main #button-up {
