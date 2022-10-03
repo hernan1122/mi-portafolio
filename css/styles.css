@@ -654,7 +654,6 @@ footer .title-contacts h2 {
 @media(max-width: 600px) {
   footer .icon-write {
     width: 120px;
-    top: 2405px;
     left: -13px;
   }
 }
@@ -736,7 +735,6 @@ footer .title-contacts h2 {
   footer .icon-write {
     width: 100px;
     left: -5px;
-    top: 2410px;
   }
   footer .footer-container {
    display: flex;
