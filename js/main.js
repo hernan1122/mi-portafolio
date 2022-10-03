@@ -4,8 +4,8 @@ const jobs = document.querySelector('#jobs');
 const contacts = document.querySelector('#contacts');
 const barsMenu = document.querySelector('.bars__menu');
 const buttonUp = document.querySelector('#button-up');
-const cardJobs = document.querySelector('.jobs');
-const imgCard = document.querySelector('#imgCard');
+
+
 
 mobileMenu.addEventListener('click', animateBars);
 barsMenu.addEventListener('click', animateBars);
@@ -29,10 +29,7 @@ function toggleMobileMenu() {
   mobileMenu.classList.toggle('inactive');
 }
 
-function toggleCardJobs() {
-  imgCard.classList.toggle('jobs');
-  console.log('hola');
-}
+function toggleCardJobs() {}
 
 function scrollUp() {
   // esta var nos indica que es el scroll de la pag
