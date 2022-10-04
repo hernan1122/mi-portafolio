@@ -330,7 +330,13 @@ main .container-about .about .interests .container-interests .interest {
   justify-content: center;
   transition: 0.3s;
 }
-.fa-solid {
+main
+  .container-about
+  .about
+  .interests
+  .container-interests
+  .interest
+  .fa-solid {
   font-size: 30px;
 }
 main .container-about .about .interests .container-interests .interest:hover {
