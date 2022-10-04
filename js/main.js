@@ -52,15 +52,14 @@ window.onscroll = function () {
   }
 }
 
-/* // menu
-window.onscroll = function () {
-  const scroll = document.documentElement.scrollTop;
-  let menu = document.getElementById('menu')
 
-  // si scroll es mayor a 20
-  if (scroll > 20) {
-    menu.classList.add('nav_mod');
-  } else if (scroll < 20) {
-    menu.classList.remove('nav_mod');
-  }
-} */
+import form from './modulos/srcipt.js';
+
+document.addEventListener('DOMContentLoaded', () => {
+  form(
+    "input-name",
+    "input-mail",
+    "input-message",
+    "button-send"
+  );
+});

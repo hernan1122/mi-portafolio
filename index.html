@@ -12,12 +12,12 @@
       rel="stylesheet"
     />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <link rel="stylesheet" href="./css/styles.css">
   <link rel="shortcut icon" href="./img/fotoperfil.jpg" type="image/x-icon" />
 </head>
 <body>
   <div id="particles-js"></div>
-
   <header id="principal" class="cabecera">
     <nav id="menu" class="menu">
       <h2 class="title-menu">Portafolio | Torrico Axel</h2>
@@ -185,12 +185,13 @@
         <form class="container-form" action="">
           <h3>Form</h3>
           <p>Name</p>
-          <input type="text">
+          <input id="input-name" class="input" type="text" required>
           <p>E-Mail</p>
-          <input type="text">
+          <input id="input-mail" class="input" type="email" required>
           <p>Message</p>
-          <input type="text">
-          <button>Send</button>
+          <input id="input-message" class="input" type="text" required>
+          <!-- <textarea class="input" name="" id="input-message"  required></textarea> -->
+          <input id="button-send" class="button" type="button" value="Send">
         </form>
         <div>
       </section>
@@ -338,6 +339,6 @@
       }
     )
   </script>
-  <script src="./js/main.js"></script>
+  <script type="module" src="./js/main.js"></script>
 </body>
 </html>
