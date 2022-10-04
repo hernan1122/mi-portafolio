@@ -53,7 +53,7 @@ body {
   color: var(--gray-letters);
   position: absolute;
   top: 16px;
-  left: 15px;
+  left: 20px;
   z-index: 310;
 }
 .cabecera .menu .notebook-menu {
