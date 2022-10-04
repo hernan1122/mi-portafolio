@@ -45,10 +45,10 @@ function scrollUp() {
 window.onscroll = function () {
   let scroll = document.documentElement.scrollTop;
 
-  // si scroll es mayor a 100
+  // si scroll es mayor a 400
   if (scroll > 400) {
     buttonUp.style.transform = "scale(1)";
-  } else if (scroll < 200) {
+  } else if (scroll < 400) {
     buttonUp.style.transform = "scale(0)";
   }
 };
