@@ -533,6 +533,7 @@ footer .title-contacts h2 {
     display: block;
   }
   .info-header .info-container {
+    margin-top: 120px;
     width: 100%;
     height: auto;
     display: flex;
@@ -665,6 +666,7 @@ footer .title-contacts h2 {
     display: block;
   }
   .info-header .info-container {
+    margin-top: 120px;
     width: 100%;
     height: auto;
     display: flex;
