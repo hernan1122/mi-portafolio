@@ -34,14 +34,40 @@ body {
   color: var(--white-letters);
 }
 .cabecera .menu {
-  height: 10%;
+  background-color: #f7f7f7;
+  width: 100%;
+  height: 58px;
+  position: fixed;
+  top: 0;
+  right: 0;
   display: flex;
   justify-content: end;
   align-items: center;
   transition: 0.3s;
+  z-index: 300;
+  box-shadow: 2px 2px 15px 0px #00000010;
 }
-.cabecera .menu:hover {
+/* .cabecera .menu:hover {
   background-color: #c4c4c4a6;
+} */
+.cabecera .menu .notebook-menu {
+  display: block;
+}
+.cabecera .menu a {
+  color: var(--gray-letters);
+  margin: 0 10px;
+  padding: 5px;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 300;
+  transition: 2s;
+}
+.cabecera .menu a:hover {
+  border-left: 1px solid var(--gray-letters);
+  padding: 0.5rem;
+}
+.cabecera .menu .cv {
+  margin-right: 60px;
 }
 .cabecera .menu .bars__menu{
     width: 30px;
@@ -52,11 +78,14 @@ body {
     transform: translate(-50%, -50%);
     cursor: pointer;
 }
+.cabecera .menu .bars__menu {
+  margin-top: 25px;
+}
 .cabecera .menu .bars__menu span {
     margin-top: 6px;
     width: 100%;
     height: 2px;
-    background: #f7f7f7;
+    background: #323335;
     display: block;
     border-radius: 20px;
     transform-origin: 0px 100%;
@@ -72,41 +101,15 @@ body {
 .activeline3__bars-menu{
     transform: rotate(-45deg) translate(-4px, 2px);
 }
-.cabecera .menu .notebook-menu {
-  display: block;
-}
-.cabecera .menu a {
-  color: #f7f7f7;
-  margin: 0 10px;
-  padding: 5px;
-  text-decoration: none;
-  font-size: 1.5rem;
-  font-weight: 300;
-  transition: 2s;
-}
-.cabecera .menu a:hover {
-  border-left: 1px solid var(--white-letters);
-  padding: 0.5rem;
-}
-.cabecera .menu .cv {
-  margin-right: 60px;
-}
-
-.nav_mod{
-    height: 70px;
-    box-shadow: 1px 1px 10px 0px #00000010;
-    background: #fff;
-}
-
 /*mobile menu*/
 .cabecera .menu #mobile-menu {
   background-color: #f7f7f7;
   margin-top: 20px;
-  padding: 0px 10px 0px 10px;
+  padding: 0px 30px 0px 30px;
   position: absolute;
-  top: 45px;
-  right: 20px;
-  width: auto;
+  top: 35px;
+  right: 0px;
+  width: 100%;
   height: auto;
   text-align: center;
   z-index: 999;
@@ -115,13 +118,13 @@ body {
 }
 @keyframes slide-in-right {
   0% {
-    -webkit-transform: translateX(1000px);
-            transform: translateX(1000px);
+    -webkit-transform: translateY(-1000px);
+            transform: translateY(-1000px);
     opacity: 0;
   }
   100% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
     opacity: 1;
   }
 }
@@ -130,7 +133,7 @@ body {
 }
 .cabecera .menu #mobile-menu li {
   padding: 8px 0;
-  width: 140px;
+  width: 100%;
   border-bottom: 1px solid #323335;
   transition: 1s;
 }

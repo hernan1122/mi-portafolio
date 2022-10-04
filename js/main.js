@@ -5,8 +5,6 @@ const contacts = document.querySelector('#contacts');
 const barsMenu = document.querySelector('.bars__menu');
 const buttonUp = document.querySelector('#button-up');
 
-
-
 mobileMenu.addEventListener('click', animateBars);
 barsMenu.addEventListener('click', animateBars);
 imgCard.addEventListener('click', toggleCardJobs);
@@ -53,3 +51,16 @@ window.onscroll = function () {
     buttonUp.style.transform = 'scale(0)';
   }
 }
+
+/* // menu
+window.onscroll = function () {
+  const scroll = document.documentElement.scrollTop;
+  let menu = document.getElementById('menu')
+
+  // si scroll es mayor a 20
+  if (scroll > 20) {
+    menu.classList.add('nav_mod');
+  } else if (scroll < 20) {
+    menu.classList.remove('nav_mod');
+  }
+} */
