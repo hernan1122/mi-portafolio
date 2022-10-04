@@ -520,7 +520,7 @@ footer .title-contacts h2 {
 @media(max-width: 768px) {
   .cabecera {
     width: 100%;
-    height: 80vh;
+    height: 100vh;
   }
   .cabecera .menu a:hover {
   border: none;
@@ -660,7 +660,7 @@ footer .title-contacts h2 {
 @media(max-width: 370px) {
   .cabecera {
     width: 100%;
-    height: 80vh;
+    height: 100vh;
   }
   .bars__menu {
     display: block;
