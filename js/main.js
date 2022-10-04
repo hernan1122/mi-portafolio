@@ -1,21 +1,21 @@
-const mobileMenu = document.querySelector('#mobile-menu');
-const about = document.querySelector('#about');
-const jobs = document.querySelector('#jobs');
-const contacts = document.querySelector('#contacts');
-const barsMenu = document.querySelector('.bars__menu');
-const buttonUp = document.querySelector('#button-up');
+const mobileMenu = document.querySelector("#mobile-menu");
+const about = document.querySelector("#about");
+const jobs = document.querySelector("#jobs");
+const contacts = document.querySelector("#contacts");
+const barsMenu = document.querySelector(".bars__menu");
+const buttonUp = document.querySelector("#button-up");
 
-mobileMenu.addEventListener('click', animateBars);
-barsMenu.addEventListener('click', animateBars);
-imgCard.addEventListener('click', toggleCardJobs);
-buttonUp.addEventListener('click', scrollUp);
+mobileMenu.addEventListener("click", animateBars);
+barsMenu.addEventListener("click", animateBars);
+imgCard.addEventListener("click", toggleCardJobs);
+buttonUp.addEventListener("click", scrollUp);
 
 let line1__bars = document.querySelector(".line1__bars-menu");
 let line2__bars = document.querySelector(".line2__bars-menu");
 let line3__bars = document.querySelector(".line3__bars-menu");
 
 function animateBars() {
-    // aplica a los nodos seleccionados el estilo de css
+  // aplica a los nodos seleccionados el estilo de css
   line1__bars.classList.toggle("activeline1__bars-menu");
   line2__bars.classList.toggle("activeline2__bars-menu");
   line3__bars.classList.toggle("activeline3__bars-menu");
@@ -24,19 +24,20 @@ function animateBars() {
 }
 
 function toggleMobileMenu() {
-  mobileMenu.classList.toggle('inactive');
+  mobileMenu.classList.toggle("inactive");
 }
 
 function toggleCardJobs() {}
 
 function scrollUp() {
   // esta var nos indica que es el scroll de la pag
-  let currentScroll = document.documentElement.scrollTop || document.body.scrollTop;
+  let currentScroll =
+    document.documentElement.scrollTop || document.body.scrollTop;
 
   // si currentScroll es mayor a 0
   if (currentScroll > 0) {
     window.requestAnimationFrame(scrollUp);
-    window.scrollTo(0, currentScroll - (currentScroll / 10));
+    window.scrollTo(0, currentScroll - currentScroll / 10);
   }
 }
 
@@ -46,20 +47,14 @@ window.onscroll = function () {
 
   // si scroll es mayor a 100
   if (scroll > 400) {
-    buttonUp.style.transform = 'scale(1)';
+    buttonUp.style.transform = "scale(1)";
   } else if (scroll < 200) {
-    buttonUp.style.transform = 'scale(0)';
+    buttonUp.style.transform = "scale(0)";
   }
-}
+};
 
+import form from "./modulos/form.js";
 
-import form from './modulos/srcipt.js';
-
-document.addEventListener('DOMContentLoaded', () => {
-  form(
-    "input-name",
-    "input-mail",
-    "input-message",
-    "button-send"
-  );
+document.addEventListener("DOMContentLoaded", () => {
+  form("input-name", "input-mail", "input-message", "button-send");
 });

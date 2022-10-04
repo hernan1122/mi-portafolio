@@ -280,7 +280,6 @@ main .container-about .about .technologies .js {
   color: #f7df1e;
 }
 main .container-jobs {
-  /* background-color: #e9e6e4; */
   background-color: #359df900;
   width: 100%;
   height: auto;
@@ -483,6 +482,21 @@ footer .title-contacts h2 {
 .networks .container-networks .social-networks a:hover {
   color: #9e9d9d;
 }
+.swal2-popup {
+  display: none;
+  position: relative;
+  box-sizing: border-box;
+  grid-template-columns: minmax(0, 100%);
+  width: 32em;
+  max-width: 100%;
+  padding: 0 0 1.25em;
+  border: none;
+  border-radius: 5px;
+  background: #eff3f5;
+  color: #545454;
+  font-family: inherit;
+  font-size: 1rem;
+}
 .swal2-container.swal2-center > .swal2-popup {
   grid-column: 2;
   grid-row: 2;
@@ -501,6 +515,20 @@ footer .title-contacts h2 {
   text-align: center;
   text-transform: none;
   word-wrap: break-word;
+}
+.swal2-html-container {
+  z-index: 1;
+  justify-content: center;
+  margin: 1em 1.6em 0.3em;
+  padding: 0;
+  overflow: auto;
+  color: inherit;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+  word-wrap: break-word;
+  word-break: break-word;
 }
 .swal2-styled.swal2-confirm {
   border: 0;

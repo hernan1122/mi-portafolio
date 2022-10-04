@@ -28,7 +28,7 @@ export default function form(input, name, mail, send) {
         text: "You have not filled out the form!",
       });
     } else {
-      Swal.fire("Good job!", "Data sent!", "success");
+      Swal.fire("Cool!", "Data sent!", "success");
       fill.push(inputValue);
       $input.value = "";
       $name.value = "";
