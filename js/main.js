@@ -8,7 +8,7 @@ const buttonUp = document.querySelector("#button-up");
 mobileMenu.addEventListener("click", animateBars);
 barsMenu.addEventListener("click", animateBars);
 imgCard.addEventListener("click", toggleCardJobs);
-/* buttonUp.addEventListener("click", scrollUp); */
+buttonUp.addEventListener("click", scrollUp);
 
 let line1__bars = document.querySelector(".line1__bars-menu");
 let line2__bars = document.querySelector(".line2__bars-menu");
@@ -29,20 +29,18 @@ function toggleMobileMenu() {
 
 function toggleCardJobs() {}
 
-/* function scrollUp() {
+function scrollUp() {
   // esta var nos indica que es el scroll de la pag
-  let currentScroll =
-    document.documentElement.scrollTop || document.body.scrollTop;
-  console.log(currentScroll);
+  let currentScroll = document.documentElement.scrollTop;
+
   // si currentScroll es mayor a 0
   if (currentScroll > 0) {
-    window.requestAnimationFrame(scrollUp);
-    window.scrollTo(0, currentScroll - currentScroll / 10);
+    window.scrollTo(0, 0);
   }
-} */
+}
 
 // para que aparezca o desaparezca el boton segun el scroll
-/* window.onscroll = function () {
+window.onscroll = function () {
   let scroll = document.documentElement.scrollTop;
 
   // si scroll es mayor a 400
@@ -51,7 +49,7 @@ function toggleCardJobs() {}
   } else if (scroll < 400) {
     buttonUp.style.transform = "scale(0)";
   }
-}; */
+};
 
 import form from "./modulos/form.js";
 
