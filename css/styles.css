@@ -732,7 +732,10 @@ footer .title-contacts h2 {
     justify-content: center;
   }
   main .container-about .about .my-data {
-    margin: 0 15px 15px 0;
+    margin-bottom: 15px;
+  }
+  main .container-about .about .my-data li .data-p {
+    padding: 0;
   }
   main .container-about .about .my-data h3,
   main .container-about .about .interests h3 {
