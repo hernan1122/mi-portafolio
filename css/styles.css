@@ -273,7 +273,7 @@ main .container-about .about .my-data li h4 {
   display: inline-block;
   width: 140px;
 }
-main .container-about .about .my-data li p {
+main .container-about .about .my-data li .data-p {
   font-size: 1.4rem;
 }
 main .container-about .about .container-technologies {
@@ -872,6 +872,9 @@ footer .title-contacts h2 {
   }
   main .container-about .about .my-data {
     margin-bottom: 15px;
+  }
+  main .container-about .about .my-data li .data-p {
+    padding: 0;
   }
   main .container-about .about .technologies {
     justify-content: center;
