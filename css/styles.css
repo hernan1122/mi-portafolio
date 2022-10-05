@@ -876,6 +876,9 @@ footer .title-contacts h2 {
   main .container-about .about .my-data {
     margin-bottom: 15px;
   }
+  main .container-about .about .my-data li h4 {
+    width: 115px;
+  }
   main .container-about .about .my-data li .data-p {
     padding: 0;
   }
