@@ -242,7 +242,7 @@ main .container-about .about p {
   font-size: 1.6rem;
   font-family: "Roboto", sans-serif;
   color: var(--gray-letters);
-  line-height: 20px;
+  line-height: 25px;
   padding-bottom: 8px;
 }
 main .container-about .about .data-interests {
