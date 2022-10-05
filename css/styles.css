@@ -264,13 +264,17 @@ main .container-about .about .my-data ul {
 }
 main .container-about .about .my-data li {
   margin: 8px 0;
+  display: flex;
 }
-main .container-about .about .my-data li strong {
+main .container-about .about .my-data li h4 {
   font-size: 1.6rem;
-  font-weight: 300;
+  font-weight: 400;
   color: var(--gray-letters);
   display: inline-block;
-  width: 110px;
+  width: 140px;
+}
+main .container-about .about .my-data li p {
+  font-size: 1.4rem;
 }
 main .container-about .about .container-technologies {
   width: auto;
@@ -322,7 +326,7 @@ main .container-about .about .interests .container-interests .interest {
   margin: 0 15px 15px 0;
   width: 100px;
   height: 100px;
-  background-color: #5db1fc;
+  background-color: #dddddd;
   color: #323335;
   display: flex;
   flex-direction: column;
@@ -340,7 +344,7 @@ main
   font-size: 30px;
 }
 main .container-about .about .interests .container-interests .interest:hover {
-  background-color: #dddddd;
+  background-color: #5db1fc;
 }
 main .container-jobs {
   background-color: #359df900;
@@ -865,6 +869,9 @@ footer .title-contacts h2 {
   }
   main .container-about .about p {
     padding: 5px 25px 20px 25px;
+  }
+  main .container-about .about .my-data {
+    margin-bottom: 15px;
   }
   main .container-about .about .technologies {
     justify-content: center;
