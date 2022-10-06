@@ -27,6 +27,28 @@ function toggleMobileMenu() {
   mobileMenu.classList.toggle("inactive");
 }
 
+// Switch
+const preferedColorScheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+const slider = document.getElementById('slider');
+const slider2 = document.getElementById('slider-2');
+
+const setTheme = (theme) => {
+    document.documentElement.setAttribute('data-theme', theme);
+    localStorage.setItem('theme', theme);
+}
+
+slider.addEventListener('click', ()  => {
+    let switchToTheme = localStorage.getItem('theme') === 'dark' ? 'light' : 'dark';
+    setTheme(switchToTheme);
+});
+
+slider2.addEventListener('click', ()  => {
+    let switchToTheme = localStorage.getItem('theme') === 'dark' ? 'light' : 'dark';
+    setTheme(switchToTheme);
+});
+
+setTheme(localStorage.getItem('theme') || preferedColorScheme);
+
 function toggleCardJobs() {}
 
 function scrollUp() {

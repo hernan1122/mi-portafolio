@@ -1,5 +1,4 @@
 :root {
-  --white-letters: #fff;
   --gray-letters: #323335;
 }
 * {
@@ -7,6 +6,18 @@
   margin: 0;
   padding: 0;
 }
+
+[data-theme = 'light'] {
+  --primary: #eff3f5;
+  --background: #5db1fc;
+  --text: #323335;
+}
+[data-theme = 'dark'] {
+  --primary: #3c4043;
+  --background: #0c121a;
+  --text: #9aa0a6;
+}
+
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
@@ -19,7 +30,7 @@ body {
   display: none;
 }
 #particles-js {
-  background-color: #5db1fc;
+  background-color: var(--background);
   position: fixed;
   width: 100%;
   height: 100%;
@@ -35,7 +46,7 @@ body {
   color: var(--white-letters);
 }
 .cabecera .menu {
-  background-color: #eff3f5;
+  background-color: var(--primary);
   width: 100%;
   height: 58px;
   position: fixed;
@@ -51,17 +62,17 @@ body {
 .cabecera .menu .title-menu {
   font-size: 1.7rem;
   font-weight: 200;
-  color: var(--gray-letters);
+  color: var(--text);
   position: absolute;
   top: 16px;
   left: 20px;
   z-index: 310;
 }
 .cabecera .menu .notebook-menu {
-  display: block;
+  display: flex;
 }
 .cabecera .menu a {
-  color: var(--gray-letters);
+  color: var(--text);
   margin: 0 10px;
   padding: 5px;
   text-decoration: none;
@@ -70,12 +81,58 @@ body {
   transition: 2s;
 }
 .cabecera .menu a:hover {
-  border-left: 1px solid var(--gray-letters);
+  border-left: 1px solid var(--text);
   padding: 0.5rem;
 }
 .cabecera .menu .cv {
-  margin-right: 60px;
+  margin-right: 40px;
 }
+/* Estilos del switch */
+.cabecera .menu .notebook-menu .switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+.cabecera .menu .notebook-menu .switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.cabecera .menu .notebook-menu .switch .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: -20px;
+  right: 20px;
+  bottom: 0;
+  background-color: #dddddd;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 34px;
+}
+.cabecera .menu .notebook-menu .switch .slider::before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: var(--background);
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 50%;
+}
+.cabecera .menu .notebook-menu .switch input:checked + .slider {
+  background-color: #dddddd;
+}
+.cabecera .menu .notebook-menu .switch input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+
 .cabecera .menu .bars__menu {
   width: 30px;
   height: 30px;
@@ -92,7 +149,7 @@ body {
   margin-top: 6px;
   width: 100%;
   height: 2px;
-  background: #323335;
+  background: var(--text);
   display: block;
   border-radius: 20px;
   transform-origin: 0px 100%;
@@ -110,7 +167,7 @@ body {
 }
 /*mobile menu*/
 .cabecera .menu #mobile-menu {
-  background-color: #eff3f5;
+  background-color: var(--primary);
   margin-top: 20px;
   padding: 0px 30px 0px 30px;
   position: absolute;
@@ -141,20 +198,66 @@ body {
 .cabecera .menu #mobile-menu li {
   padding: 8px 0;
   width: 100%;
-  border-bottom: 1px solid #323335;
+  border-bottom: 1px solid var(--text);
   transition: 1s;
 }
 .cabecera .menu #mobile-menu .cv-mobile {
-  border: none;
+  border-bottom: 1px solid var(--text);
 }
 .cabecera .menu #mobile-menu a {
   font-size: 1.7rem;
   font-weight: 200;
   line-height: 30px;
-  color: var(--gray-letters);
+  color: var(--text);
   width: 100%;
   text-decoration: none;
 }
+.cabecera .menu #mobile-menu .switch {
+  position: relative;
+  display: inline-block;
+  margin: 10px 0;
+  width: 60px;
+  height: 34px;
+}
+.cabecera .menu #mobile-menu .switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.cabecera .menu #mobile-menu .switch .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #dddddd;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 34px;
+}
+.cabecera .menu #mobile-menu .switch .slider::before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: var(--background);
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 50%;
+}
+.cabecera .menu #mobile-menu .switch input:checked + .slider {
+  background-color: #dddddd;
+}
+.cabecera .menu #mobile-menu .switch input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+
 /*header*/
 .info-header {
   height: 90%;
@@ -180,7 +283,7 @@ body {
   border-radius: 100%;
 }
 .info-header .info-container .container-nombre {
-  color: var(--gray-letters);
+  color: var(--text);
   margin: 20px;
   padding-left: 20px;
   display: flex;
@@ -188,7 +291,7 @@ body {
   justify-content: center;
   align-items: center;
   width: 60%;
-  border-left: 1px solid #323335;
+  border-left: 1px solid var(--text);
 }
 /*sombreado*/
 .info-header .info-container .container-nombre h1 {
@@ -213,7 +316,7 @@ main {
   align-items: center;
 }
 main .container-about {
-  background-color: #eff3f5;
+  background-color: var(--primary);
   background-size: cover;
   padding: 30px;
   width: 100%;
@@ -224,7 +327,7 @@ main .container-about figure {
   display: flex;
   align-items: center;
   padding-right: 30px;
-  border-right: 1px solid var(--gray-letters);
+  border-right: 1px solid var(--text);
 }
 main .container-about figure img {
   width: 320px;
@@ -235,13 +338,13 @@ main .container-about .about {
 }
 main .container-about .about h2 {
   font-size: 3rem;
-  color: var(--gray-letters);
+  color: var(--text);
   margin-bottom: 30px;
 }
 main .container-about .about p {
   font-size: 1.6rem;
   font-family: "Roboto", sans-serif;
-  color: var(--gray-letters);
+  color: var(--text);
   line-height: 25px;
   padding-bottom: 8px;
 }
@@ -256,7 +359,7 @@ main .container-about .about .my-data h3,
 main .container-about .about .interests h3,
 main .container-about .about .container-technologies h3 {
   font-size: 1.8rem;
-  color: var(--gray-letters);
+  color: var(--text);
   margin-bottom: 15px;
 }
 main .container-about .about .my-data ul {
@@ -269,7 +372,7 @@ main .container-about .about .my-data li {
 main .container-about .about .my-data li h4 {
   font-size: 1.6rem;
   font-weight: 400;
-  color: var(--gray-letters);
+  color: var(--text);
   display: inline-block;
   width: 140px;
 }
@@ -344,7 +447,7 @@ main
   font-size: 30px;
 }
 main .container-about .about .interests .container-interests .interest:hover {
-  background-color: #5db1fc;
+  background-color: var(--background);
 }
 main .container-jobs {
   background-color: #359df900;
@@ -361,7 +464,7 @@ main .container-jobs .title {
 }
 main .container-jobs div h2 {
   font-size: 3rem;
-  color: var(--gray-letters);
+  color: var(--text);
   margin-bottom: 10px;
   width: 80%;
   display: flex;
@@ -383,7 +486,7 @@ main .container-jobs div h2 {
 .container-jobs .my-jobs .jobs:hover {
   transform: scale(1.2, 1.2);
   box-shadow: 0px 0px 28px 3px rgba(0, 0, 0, 0.75);
-  background-color: #eff3f5;
+  background-color: var(--primary);
 }
 .container-jobs .my-jobs .jobs img {
   width: 240px;
@@ -398,18 +501,18 @@ main .container-jobs div h2 {
 .container-jobs .my-jobs .jobs .description h3 {
   font-size: 1.6rem;
   font-weight: 300;
-  color: var(--gray-letters);
+  color: var(--text);
 }
 .container-jobs .my-jobs .jobs .description p {
   font-size: 1.2rem;
   font-weight: 300;
-  color: var(--gray-letters);
+  color: var(--text);
 }
 .container-jobs .my-jobs .jobs .description .icon {
   width: 40px;
   height: 40px;
   font-size: 25px;
-  color: var(--gray-letters);
+  color: var(--text);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -418,12 +521,13 @@ main .container-jobs div h2 {
 }
 .container-jobs .my-jobs .jobs .description .icon:hover {
   background-color: #dddddd;
+  color: var(--background);
   border-radius: 100%;
 }
 main #button-up {
   width: 50px;
   height: 50px;
-  background-color: #359ef9;
+  background-color: var(--background);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -475,7 +579,7 @@ footer .title-contacts {
 }
 footer .title-contacts h2 {
   font-size: 3rem;
-  color: var(--gray-letters);
+  color: var(--text);
   margin: 10px 0;
   display: flex;
   justify-content: center;
@@ -492,32 +596,32 @@ footer .title-contacts h2 {
 }
 .form .container-form h3 {
   font-size: 1.8rem;
-  color: var(--gray-letters);
+  color: var(--text);
   padding-bottom: 10px;
   width: 60%;
-  border-bottom: 1px solid #323335;
+  border-bottom: 1px solid var(--text);
   display: flex;
   justify-content: center;
 }
 .form .container-form p {
   font-size: 1.4rem;
-  color: var(--gray-letters);
+  color: var(--text);
   margin: 7px 0;
 }
 .form .container-form .input {
   background-color: transparent;
   padding: 6px;
   width: 355px;
-  border: 1px solid #323335;
+  border: 1px solid var(--text);
 }
 .form .container-form .button {
   margin-top: 16px;
   padding: 4px 30px;
   font-family: "Oswald", sans-serif;
   font-weight: 500;
-  border: 1px solid #323335;
+  border: 1px solid var(--text);
   font-size: 1.5rem;
-  color: #323335;
+  color: var(--text);
 }
 .form .container-form .button:hover {
   background-color: #dddddd;
@@ -539,11 +643,11 @@ footer .title-contacts h2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-top: 1px solid #323335;
+  border-top: 1px solid var(--text);
 }
 .networks .container-networks .social-networks a {
   font-size: 40px;
-  color: var(--gray-letters);
+  color: var(--text);
   margin: 0 20px;
 }
 .networks .container-networks .social-networks a:hover {
@@ -559,7 +663,7 @@ footer .title-contacts h2 {
   padding: 0 0 1.25em;
   border: none;
   border-radius: 5px;
-  background: #eff3f5;
+  background: var(--primary);
   color: #545454;
   font-family: inherit;
   font-size: 1rem;
@@ -576,7 +680,7 @@ footer .title-contacts h2 {
   max-width: 100%;
   margin: 0;
   padding: 0.8em 1em 0;
-  color: #359ef9;
+  color: var(--background);
   font-size: 2.4rem;
   font-weight: 600;
   text-align: center;
@@ -601,7 +705,7 @@ footer .title-contacts h2 {
   border: 0;
   border-radius: 0.25em;
   background: initial;
-  background-color: #359ef9;
+  background-color: var(--background);
   color: #fff;
   font-size: 1.4rem;
 }
