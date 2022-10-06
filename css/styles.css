@@ -564,8 +564,10 @@ footer .title-contacts h2 {
   font-size: 3rem;
   color: var(--text);
   margin: 10px 0;
+  width: 100%;
   display: flex;
   justify-content: center;
+  border-bottom: 1px solid var(--text);
 }
 .form .container-form {
   padding: 20px;
@@ -609,7 +611,7 @@ footer .title-contacts h2 {
   color: var(--text);
 }
 .form .container-form .button:hover {
-  background-color: #dddddd;
+  background-color: var(--background);
 }
 .networks .title-networks {
   display: flex;
@@ -636,7 +638,7 @@ footer .title-contacts h2 {
   margin: 0 20px;
 }
 .networks .container-networks .social-networks a:hover {
-  color: #9e9d9d;
+  color: var(--background);
 }
 .swal2-popup {
   display: none;
@@ -681,6 +683,7 @@ footer .title-contacts h2 {
   color: inherit;
   font-size: 1.6rem;
   font-weight: 400;
+  color: var(--text);
   line-height: normal;
   text-align: center;
   word-wrap: break-word;
