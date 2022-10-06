@@ -31,6 +31,7 @@ function toggleMobileMenu() {
 const preferedColorScheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
 const slider = document.getElementById('slider');
 const slider2 = document.getElementById('slider-2');
+//const imgFooter = document.getElementById('principal-1');
 
 const setTheme = (theme) => {
     document.documentElement.setAttribute('data-theme', theme);
@@ -39,15 +40,27 @@ const setTheme = (theme) => {
 
 slider.addEventListener('click', ()  => {
     let switchToTheme = localStorage.getItem('theme') === 'dark' ? 'light' : 'dark';
-    setTheme(switchToTheme);
+  setTheme(switchToTheme);
+  //changeImg();
 });
 
 slider2.addEventListener('click', ()  => {
     let switchToTheme = localStorage.getItem('theme') === 'dark' ? 'light' : 'dark';
-    setTheme(switchToTheme);
+  setTheme(switchToTheme);
+  //changeImg();
 });
 
 setTheme(localStorage.getItem('theme') || preferedColorScheme);
+
+/* function changeImg() {
+  if (preferedColorScheme === 'light') {
+    imgFooter.style.backgroundImage = "url('./img/background-footer-oscuro.svg')";
+  } else {
+    imgFooter.style.backgroundImage = "url('./img/background-footer.svg')";
+  }
+  console.log(changeImg);
+  console.log('hola');
+} */
 
 function toggleCardJobs() {}
 
