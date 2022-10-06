@@ -194,10 +194,6 @@
     width: 100%;
     height: 13vh;
   }
-  .networks .container-networks .social-networks {
-    width: 60%;
-    border-top: 1px solid #323335;
-  }
   .networks .container-networks .social-networks a {
     font-size: 35px;
     margin: 0 15px;
@@ -331,10 +327,6 @@
     padding-bottom: 0;
     width: 100%;
     height: 13vh;
-  }
-  .networks .container-networks .social-networks {
-    width: 60%;
-    border-top: 1px solid #323335;
   }
   .networks .container-networks .social-networks a {
     font-size: 35px;
