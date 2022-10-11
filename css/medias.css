@@ -73,20 +73,11 @@
     border: none;
     box-shadow: none;
   }
-  /* .info-header .info-container .container-img img {
-    width: 230px;
-  } */
   .info-header .info-container .container-nombre {
     margin-left: 0;
     width: auto;
     border: none;
   }
-  /* .info-header .info-container .container-nombre h1 {
-    font-size: 4rem;
-  }
-  .info-header .info-container .container-nombre h3 {
-    font-size: 2rem;
-  } */
   main .container-about {
     padding: 10px 0;
     height: auto;
@@ -140,9 +131,9 @@
   main .container-about .about .container-technologies h3 {
     margin-bottom: 0;
   }
-  main .container-about .about .technologies div {
+  /* main .container-about .about .technologies div {
     margin-right: 30px;
-  }
+  } */
   main .container-about .about .data-interests,
   main .container-about .about .interests {
     margin-left: 26px;
@@ -281,6 +272,9 @@
   main .container-about .about .my-data h3,
   main .container-about .about .interests h3 {
     margin-bottom: 25px;
+  }
+  main .container-about .about .container-technologies {
+    width: 330px;
   }
   main .container-about .about .container-technologies h3 {
     margin-bottom: 0;
