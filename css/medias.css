@@ -74,17 +74,17 @@
     box-shadow: none;
   }
   .info-header .info-container .container-img img {
-    width: 200px;
+    width: 230px;
   }
   .info-header .info-container .container-nombre {
     margin-left: 0;
     border: none;
   }
   .info-header .info-container .container-nombre h1 {
-    font-size: 3rem;
+    font-size: 4rem;
   }
   .info-header .info-container .container-nombre h3 {
-    font-size: 1.7rem;
+    font-size: 2rem;
   }
   main .container-about {
     padding: 10px 0;
