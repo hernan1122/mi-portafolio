@@ -7,7 +7,6 @@ const buttonUp = document.querySelector("#button-up");
 
 mobileMenu.addEventListener("click", animateBars);
 barsMenu.addEventListener("click", animateBars);
-imgCard.addEventListener("click", toggleCardJobs);
 buttonUp.addEventListener("click", scrollUp);
 
 let line1__bars = document.querySelector(".line1__bars-menu");
@@ -28,28 +27,33 @@ function toggleMobileMenu() {
 }
 
 // Switch
+//si nos devuelve true, entonces el color preferido del usuario es dark, y si es falso el color preferido es light. El matcMedia nos da el tema predeterminado del usuario
 const preferedColorScheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
 const slider = document.getElementById('slider');
 const slider2 = document.getElementById('slider-2');
 //const imgFooter = document.getElementById('principal-1');
 
+//para guardar el tema que prefiere el usuario
 const setTheme = (theme) => {
     document.documentElement.setAttribute('data-theme', theme);
     localStorage.setItem('theme', theme);
 }
 
+//para cambiar de tema
 slider.addEventListener('click', ()  => {
     let switchToTheme = localStorage.getItem('theme') === 'dark' ? 'light' : 'dark';
   setTheme(switchToTheme);
   //changeImg();
 });
 
+//para cambiar de tema en el mebu mobile
 slider2.addEventListener('click', ()  => {
     let switchToTheme = localStorage.getItem('theme') === 'dark' ? 'light' : 'dark';
   setTheme(switchToTheme);
   //changeImg();
 });
 
+//para que se quede en el tema que el usuario uso la app, y si es la primera vez que entra, que le tome el tema predeterminado
 setTheme(localStorage.getItem('theme') || preferedColorScheme);
 
 /* function changeImg() {
@@ -61,8 +65,6 @@ setTheme(localStorage.getItem('theme') || preferedColorScheme);
   console.log(changeImg);
   console.log('hola');
 } */
-
-function toggleCardJobs() {}
 
 function scrollUp() {
   // esta var nos indica que es el scroll de la pag

@@ -287,17 +287,9 @@ body {
 /*sombreado*/
 .info-header .info-container .container-nombre h1 {
   font-size: 4rem;
-  /* background: linear-gradient(to right, #f7f7f7, #7c7b7b);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent; */
 }
 .info-header .info-container .container-nombre h3 {
   font-size: 2rem;
-  /* background: linear-gradient(to right, #f7f7f7, #7c7b7b);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent; */
 }
 /*main*/
 main {
@@ -379,9 +371,6 @@ main .container-about .about .technologies {
   font-size: 40px;
   display: flex;
   flex-direction: column;
-}
-main .container-about .about .technologies div {
-  /* margin-right: 30px; */
 }
 main .container-about .about .technologies .html {
   color: #e34f26;
