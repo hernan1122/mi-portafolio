@@ -397,7 +397,7 @@ main .container-about .about .technologies .js {
 }
 main .container-about .about .technologies .technologies-title {
   font-size: 1.5rem;
-  color: var(--primary);
+  color: #323335;
 }
 main .container-about .about .interests {
   width: auto;
