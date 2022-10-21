@@ -367,11 +367,25 @@ main .container-about .about .container-technologies {
   margin-left: 100px;
 }
 main .container-about .about .technologies {
-  width: 320px;
-  font-size: 40px;
+  font-size: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+main .container-about .about .technologies .html,
+main .container-about .about .technologies .css,
+main .container-about .about .technologies .js {
+  margin: 10px 0;
+  width: 100px;
+  height: 100px;
+  background-color: #dddddd;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
 }
+
 main .container-about .about .technologies .html {
   color: #e34f26;
 }
@@ -381,51 +395,9 @@ main .container-about .about .technologies .css {
 main .container-about .about .technologies .js {
   color: #f7df1e;
 }
-main .container-about .about .technologies .bars-skill {
-  width: 100%;
-  height: 8px;
-  background-color: #dddddd;
-  position: relative;
-  margin-bottom: 30px;
-}
-main .container-about .about .technologies .bars-skill .progress-skills,
-main .container-about .about .technologies .bars-skill .progress-skills-1,
-main .container-about .about .technologies .bars-skill .progress-skills-2 {
-  width: 90%;
-  height: 8px;
-  background-color: #e34f26;
-  position: absolute;
-  top: auto;
-  left: auto;
-  border-radius: 0;
-}
-main .container-about .about .technologies .bars-skill .progress-skills-1 {
-  width: 95%;
-  background-color: #0099e5;
-}
-main .container-about .about .technologies .bars-skill .progress-skills-2 {
-  width: 80%;
-  background-color: #f7df1e;
-}
-main .container-about .about .technologies .bars-skill span {
-  position: absolute;
-  height: 40px;
-  width: 40px;
-  background-color: #323335;
-  border-radius: 50px;
-  line-height: 40px;
-  text-align: center;
-  top: -17px;
-  font-size: 14px;
-}
-main .container-about .about .technologies .bars-skill .span-html {
-  left: 260px;
-}
-main .container-about .about .technologies .bars-skill .span-css {
-  left: 285px;
-}
-main .container-about .about .technologies .bars-skill .span-js {
-  left: 230px;
+main .container-about .about .technologies .technologies-title {
+  font-size: 1.5rem;
+  color: var(--primary);
 }
 main .container-about .about .interests {
   width: auto;
