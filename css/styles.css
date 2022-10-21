@@ -7,11 +7,13 @@
   --primary: #eff3f5;
   --background: #5db1fc;
   --text: #323335;
+  --shade: #4e4e4e0c;
 }
 [data-theme = 'dark'] {
   --primary: #3c4043;
   --background: #0c121a;
   --text: #9aa0a6;
+  --shade: #00000015;
 }
 html {
   font-size: 62.5%;
@@ -170,6 +172,7 @@ body {
   height: auto;
   text-align: center;
   z-index: 999;
+  box-shadow: 2px 13px 15px 0px var(--shade);
   animation: slide-in-right 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: slide-in-right 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
@@ -229,6 +232,7 @@ body {
   transition: .4s;
   border-radius: 34px;
 }
+.cabecera .menu #mobile-menu- .switch .slider,
 .cabecera .menu #mobile-menu .switch .slider::before {
   position: absolute;
   content: "";
@@ -383,17 +387,28 @@ main .container-about .about .technologies .js {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 8px;
 }
 
 main .container-about .about .technologies .html {
   color: #e34f26;
+  transition: 0.3s;
+}
+main .container-about .about .technologies .html:hover {
+  background-color: var(--background);
 }
 main .container-about .about .technologies .css {
   color: #0099e5;
+  transition: 0.3s;
+}
+main .container-about .about .technologies .css:hover {
+  background-color: var(--background);
 }
 main .container-about .about .technologies .js {
   color: #f7df1e;
+  transition: 0.3s;
+}
+main .container-about .about .technologies .js:hover {
+  background-color: var(--background);
 }
 main .container-about .about .technologies .technologies-title {
   font-size: 1.5rem;
