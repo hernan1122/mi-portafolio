@@ -10,7 +10,8 @@
   --shade: #4e4e4e0c;
 }
 [data-theme = 'dark'] {
-  --primary: #3c4043;
+  /* --primary: #3c4043; */
+  --primary: #333335;
   --background: #0c121a;
   --text: #9aa0a6;
   --shade: #00000015;
