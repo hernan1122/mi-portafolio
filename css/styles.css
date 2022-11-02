@@ -595,7 +595,7 @@ footer .title-contacts h2 {
   padding: 20px;
   padding-bottom: 30px;
   width: auto;
-  height: 305px;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
