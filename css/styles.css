@@ -604,6 +604,7 @@ footer .title-contacts h2 {
 .form .container-form h3 {
   font-size: 1.8rem;
   color: var(--text);
+  margin-bottom: 10px;
   padding-bottom: 10px;
   width: 60%;
   border-bottom: 1px solid var(--text);
@@ -617,19 +618,23 @@ footer .title-contacts h2 {
 }
 .form .container-form .input {
   background-color: transparent;
+  font-family: "Oswald", sans-serif;
+  font-weight: 300;
+  font-size: 1.6rem;
+  margin-top: 10px;
   padding: 6px;
-  width: 355px;
-  border: 1px solid var(--text);
+  width: 500px;
+  border: none;
+  border-bottom: 1px solid var(--text);
 }
 .form .container-form .button {
   background-color: transparent;
-  margin-top: 16px;
-  padding: 4px 30px;
+  margin-top: 25px;
+  padding: 5px 35px;
   font-family: "Oswald", sans-serif;
   font-weight: 500;
   border: 1px solid var(--text);
   font-size: 1.5rem;
-
   color: var(--text);
 }
 .form .container-form .button:hover {
